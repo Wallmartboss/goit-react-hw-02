@@ -3,7 +3,6 @@
   flex-direction: row;
   gap: 10px;
   width: 100%;
-  /* justify-content: space-between; */
   padding: 20px;
 }
 .btn {
@@ -11,7 +10,7 @@
   width: 150px;
   font-size: 24px;
   text-align: center;
-  background-color: lightgray;
+  /* background-color: lightgray; */
 }
 .hide {
   display: none;
