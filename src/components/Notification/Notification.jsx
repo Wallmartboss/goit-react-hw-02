@@ -1,8 +1,8 @@
 import s from "./Notification.module.css" 
 
-const Notification = ({ totalFeedback }) => {
+const Notification = () => {
     return (
-        <p className={!totalFeedback ? s.notification_text : s.hide}>No feedback yet</p>
+        <p className={s.notification_text}>No feedback yet</p>
     );
 };
 

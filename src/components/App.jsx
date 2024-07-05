@@ -35,6 +35,8 @@ const updateFeedback = feedbackType => {
             });
   };
   
+  const perc_positive = Math.round((feedbacks.good / totalFeedback) * 100);
+
   return (
     <>
       <Description />
@@ -42,12 +44,12 @@ const updateFeedback = feedbackType => {
         totalFeedback={totalFeedback}
         updateFeedback={updateFeedback}
         feedbackReset={feedbackReset} />
+      { totalFeedback > 0 && 
       <Feedback
         feedbacks={feedbacks}
         totalFeedback={totalFeedback}
-      />
-      <Notification
-      totalFeedback={totalFeedback}/> 
+        perc_positive={perc_positive} /> }
+      { !totalFeedback && <Notification /> } 
     </>
   );
 };

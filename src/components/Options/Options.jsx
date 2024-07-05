@@ -7,8 +7,7 @@ const Options = ({ totalFeedback, updateFeedback, feedbackReset }) => {
             <button className={s.btn} onClick={() => updateFeedback('good')}>Good</button>
             <button className={s.btn} onClick={() => updateFeedback('neutral')}>Neutral</button>
             <button className={s.btn} onClick={() => updateFeedback('bad')}>Bad</button>
-            <button className={totalFeedback ? s.btn : s.hide} onClick={feedbackReset}>Reset</button>
-                    
+            <button className={totalFeedback ? s.btn : s.hide} onClick={feedbackReset}>Reset</button>  
         </div>
     );
 };
